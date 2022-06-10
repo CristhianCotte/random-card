@@ -1,0 +1,43 @@
+.card{
+    background-color: white;
+    margin: auto;
+    height: 200px;
+    width: 250px;
+    font-size: 80px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    padding-top: 180px;    
+}
+
+.number::after{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 80px;
+}
+
+.number::before{
+    
+    position: absolute;
+    bottom: 20px;
+    right:20px;
+    font-size: 80px;
+}
+
+.picas::before, .picas::after {
+    content: '\2660';
+}
+.treboles::after, .treboles::before{
+    content:'\2663' ;
+}
+.corazon::after, .corazon::before{
+    content:'\2665' ;
+    color: red;
+}
+.rombos::after, .rombos::before{
+    content:'\2666' ;
+    color: red;
+}
